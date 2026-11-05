@@ -1,0 +1,21 @@
+{
+  "name": "node-starter",
+  "private": true,
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "db:migrate": "node db/migrations/run.js",
+    "db:seed": "node db/seed.js",
+    "test": "node --test \"test/*.test.js\""
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=20.17.0"
+  },
+  "dependencies": {
+    "@koa/router": "^15.7.0",
+    "koa": "^3.2.1",
+    "koa-bodyparser": "^4.4.1",
+    "sqlite3": "^6.0.1"
+  }
+}
